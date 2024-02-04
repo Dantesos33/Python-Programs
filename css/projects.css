@@ -1,0 +1,96 @@
+/* Header content */
+
+.header__content{
+    margin-top: 2rem;
+}
+
+.lab-1{
+    grid-area: lab-1;
+}
+
+.lab-2{
+    grid-area: lab-2;
+}
+
+.lab-3{
+    grid-area: lab-3;
+}
+
+.lab-4{
+    grid-area: lab-4;
+}
+
+.lab-5{
+    grid-area: lab-5;
+}
+
+.lab-6{
+    grid-area: lab-6;
+}
+
+.lab-7{
+    grid-area: lab-7;
+}
+
+.card{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 3rem;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 3px solid var(--p-color)
+}
+
+span{
+    color: var(--p-color)
+}
+
+.btn{
+    padding: .7rem 2rem;
+    background-color: var(--p-color);
+    border-radius: 3rem;
+    cursor: pointer;
+    font-size: var(--fs-base);
+    border: 3px solid #fff;
+    color: rgba(15, 15, 120, 0.8);
+    font-weight: 600;
+}
+
+.task{
+    font-size: var(--fs-3xl);
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 860px){
+    .cards{
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas: 
+        "lab-1 lab-1 lab-2 lab-2 lab-2"
+        "lab-3 lab-3 lab-4 lab-4 lab-4"
+        "lab-5 lab-5 lab-6 lab-6 lab-6"
+        "lab-7 lab-7 lab-7 lab-7 lab-7";
+        padding-inline: 2rem;
+    }
+}
+
+@media screen and (max-width: 859px){
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card{
+        flex-basis: 50%;
+        padding: 3rem 0.5rem;
+    }
+}
+
+@media screen and (max-width: 620px){
+    .card{
+        flex-basis: 100%;
+    }
+}

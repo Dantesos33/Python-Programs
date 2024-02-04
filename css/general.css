@@ -133,18 +133,18 @@ img {
 
     .header__mobilemenu {
         position: absolute;
-        background-color: #fff;
+        background: #fff;
         width: 100%;
         left: -100%;
-        top: 0;
+        top: 70px;
         bottom: 0;
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
         padding-block: 6rem;
-        border: 1px solid black;
         transition: all 0.5s;
+        z-index: 2;
     }
 
     .header__mobilelist {
@@ -186,5 +186,15 @@ img {
 
     .header__hamburger:hover .header__mobilemenu{
         left: 0;
+    }
+}
+
+@media screen and (max-width: 620px){
+    .header__logo{
+        font-size: var(--fs-2xl);
+    }
+
+    .header__hamburger{
+        width: 1.3rem;
     }
 }

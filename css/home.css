@@ -1,0 +1,43 @@
+/* Header content */
+
+.header__content{
+    margin-top: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header__title{
+    font-size: var(--fs-6xl);
+    margin-bottom: 2rem;
+}
+
+.header__subtitle{
+    color: #fff;
+    font-size: var(--fs-2xl);
+    margin-bottom: 3rem;
+    font-weight: 600;
+}
+
+span{
+    color: var(--p-color)
+}
+
+.btn{
+    padding: 1rem 3rem;
+    background-color: var(--p-color);
+    border-radius: 3rem;
+    cursor: pointer;
+    font-size: var(--fs-lg);
+    border-top-right-radius: 0px;
+    transition: all 0.3s;
+    border: 3px solid #fff;
+    color: rgba(15, 15, 120, 0.8);
+    font-weight: 600;
+}
+
+.btn:hover{
+    border-top-right-radius: 3rem;
+}
